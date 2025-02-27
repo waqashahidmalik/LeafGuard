@@ -1,0 +1,21 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# Ignore database & media files
+db.sqlite3
+/media/
+*.pkl  # Ignore model files
+
+# Ignore environment variables
+.env
+
+# Ignore Django and PyCharm specific files
+*.log
+.idea/
+*.sqlite3
