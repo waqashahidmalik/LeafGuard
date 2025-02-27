@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!u4c+4=m)n6sn=$qt1&c^9282b1bb0mlitk(8f&+7=dl_8i2y8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['leafguard-c9s4wkzo2-waqashahidmaliks-projects.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
