@@ -7,7 +7,7 @@
       "config": {
         "runtime": "python3.10",
         "maxLambdaSize": "50mb",
-        "externalPackages": ["numpy", "opencv-python-headless"]
+        "externalPackages": ["numpy", "opencv-python-headless", "tensorflow"]
       }
     }
   ],
