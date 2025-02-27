@@ -5,7 +5,23 @@ LeafGuard is a Django-based API for **plant disease classification** using a mac
 
 ## **🚀 Features**  
 - Upload an image of a plant leaf  
-- Get a **disease prediction** with a confidence score  
+- Get a **disease prediction** with a confidence score
+
+## **📊 Dataset Information**
+- The model is trained on the **PlantVillage Dataset**.
+- The dataset consists of images of both **healthy** and **diseased** plant leaves.
+- Source: [PlantVillage Dataset](https://www.kaggle.com/datasets/waqashahidmalik/plantvillage/)
+
+## **🧠 Model Details**
+- Built using **TensorFlow** and **Keras**.
+- Model Architecture:
+  - **Convolutional Neural Network (CNN)** with:
+    - **Conv2D**, **MaxPooling2D** layers.
+    - **BatchNormalization** for stable training.
+    - **Dropout** for regularization.
+    - **Dense layers** for classification.
+  - Optimized with **Adam optimizer**.
+- The model was trained using **label binarization** for multi-class classification.
 
 ## **🛠️ Installation**  
 
@@ -55,5 +71,8 @@ curl -X POST -F "image=@path/to/image.jpg" http://127.0.0.1:8000/api/predict/
 ```
 
 ## **📌 Notes**  
-- **Model files are not included**. Place them in the appropriate directory.  
+- **Model files are not included**. Place them in the appropriate directory.
+
+## **🤝 Contributing**
+Feel free to fork, improve, and contribute! 🚀
 
