@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "LeafGuard/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.10",
+        "maxLambdaSize": "50mb",
+        "externalPackages": ["numpy", "opencv-python-headless"]
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "LeafGuard/wsgi.py" }
+  ]
+}
+

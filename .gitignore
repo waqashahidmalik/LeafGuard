@@ -19,3 +19,4 @@ db.sqlite3
 *.log
 .idea/
 *.sqlite3
+.vercel
