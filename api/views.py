@@ -7,6 +7,16 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from tensorflow.keras.preprocessing.image import img_to_array
 
+
+import tensorflow as tf
+
+# Restrict TensorFlow to use minimal memory
+tf.config.set_logical_device_configuration(
+    tf.config.list_physical_devices("CPU")[0],
+    [tf.config.LogicalDeviceConfiguration(memory_limit=512)]
+)
+
+
 # Google Drive File IDs for model files
 MODEL_FILE_ID = "1QpqjXkntRg01t-1HWmzFvrMtOJKObHZY"
 LABEL_FILE_ID = "1sGvbcwq92Ry83HFDqzFZZOVkMhSxkNzH"
